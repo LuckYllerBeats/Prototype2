@@ -568,7 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 276
   right: 275
-  maxTimer: 0.5
+  maxTimer: 0.1
 --- !u!1001 &1916366849
 Prefab:
   m_ObjectHideFlags: 0
