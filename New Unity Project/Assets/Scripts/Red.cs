@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Red : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class Red : MonoBehaviour
             //FindObjectOfType<AudioManager>().Play("");
             //Instantiate(bloodSpat, new Vector3(1, -2, 1), Quaternion.identity);
             //Instantiate(deathFX, transform.position, Quaternion.identity);
+        }
+        if (col.gameObject.tag == "Check")
+        {
+            //Debug.Log("touch");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
