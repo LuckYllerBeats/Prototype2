@@ -5,7 +5,7 @@ using UnityEngine;
 public class FXTest : MonoBehaviour {
 
     public GameObject bloodFX;
-    public GameObject []bloodTrailFX;
+    public GameObject bloodTrailFX;
  
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -13,8 +13,7 @@ public class FXTest : MonoBehaviour {
         {
             //Play Sound & INstantiate particles
             Instantiate(bloodFX, transform.position, Quaternion.identity);      //Instantiate bloodFX from the position of contact
-           // Instantiate(bloodTrailFX, new Vector3(0, -2, 0), Quaternion.identity); //Instantiate bloodFX (Transform.pos or Vector?)
-            print("Ready to play sound & FX");
+            Instantiate(bloodTrailFX, new Vector3(0, -2, 0), Quaternion.identity); //Instantiate bloodFX (Transform.pos or Vector?)
         }
     }
 }

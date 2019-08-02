@@ -9,6 +9,8 @@ public class Blue : MonoBehaviour
     public bool blueTouched;
     public bool goBack;
 
+    //public GameObject bloodSpat;
+   // public GameObject deathFX;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,9 @@ public class Blue : MonoBehaviour
     void Update()
     {
         goBack = GameManager.instance.visible;
-        if (goBack)
+        if (goBack && blueTouched)
         {
-            //blueTouched = false;
+            blueTouched = false;
         }
     }
 
@@ -30,6 +32,11 @@ public class Blue : MonoBehaviour
         if (col.gameObject.tag == "Obstacle")
         {
             blueTouched = true;
+            //This for the sound effects 
+            //Play Sound & VFX
+            //FindObjectOfType<AudioManager>().Play("");
+            //Instantiate(bloodSpat, new Vector3(1, -2, 1), Quaternion.identity);
+            //Instantiate(deathFX, transform.position, Quaternion.identity);
         }
     }
 }

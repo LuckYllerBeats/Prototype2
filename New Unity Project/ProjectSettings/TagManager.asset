@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Red
   - Blue
+  - placeHolder
   layers:
   - Default
   - TransparentFX

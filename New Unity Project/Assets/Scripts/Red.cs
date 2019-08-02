@@ -8,7 +8,8 @@ public class Red : MonoBehaviour
 	public static Red instance;
     public bool redTouched;
     public bool goBack;
-
+    //public GameObject bloodSpat;
+    // public GameObject deathFX;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +20,9 @@ public class Red : MonoBehaviour
     void Update()
     {
         goBack = GameManager.instance.visible;
-        if (goBack)
+        if (goBack && redTouched)
         {
-            //redTouched = false;
+            redTouched = false;
         }
     }
 
@@ -31,6 +32,11 @@ public class Red : MonoBehaviour
         {
       
             redTouched = true;
+            //This for the sound effects 
+            //Play Sound & VFX
+            //FindObjectOfType<AudioManager>().Play("");
+            //Instantiate(bloodSpat, new Vector3(1, -2, 1), Quaternion.identity);
+            //Instantiate(deathFX, transform.position, Quaternion.identity);
         }
     }
 }

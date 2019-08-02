@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     {
         oriPos = GameLevel.transform.position.y;
         instance = this;
-        visible = true;
     }
 
     // Update is called once per frame
@@ -39,13 +38,13 @@ public class GameManager : MonoBehaviour
             if (GameLevel.transform.position.y < -2f)
             {
                 visible = false;
-                if (redTouched)
+                if (redTouched && !blueTouched)
                 {
                     red.SetActive(false);
                 }
                 else
                 {
-                    if (blueTouched)
+                    if (blueTouched && !redTouched)
                     {
                         blue.SetActive(false);
                     }
