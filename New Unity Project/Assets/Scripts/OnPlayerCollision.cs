@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OnPlayerCollision : MonoBehaviour{
+    public static OnPlayerCollision instance;
+    public bool IsPlayerDead;
+    public float timer;
 
-
-    void OnCollisionEnter2D(Collision2D col)
+    void Start()
     {
-        if (col.gameObject.tag == "Obstacle")
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
+
     }
+
+    void Update()
+    {
+
+    }
+
 
 }
 
