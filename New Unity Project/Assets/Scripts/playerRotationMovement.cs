@@ -30,7 +30,7 @@ public class playerRotationMovement : MonoBehaviour {
         float timer = 0f;
         while (timer <= maxTimer)
         {
-            transform.Rotate(new Vector3(0, 0, 60) * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 0, 40) * Time.deltaTime); // transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
             timer += Time.deltaTime;
             yield return null;
         }
