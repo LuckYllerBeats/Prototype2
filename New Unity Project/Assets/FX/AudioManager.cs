@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("BG Sound");
+        Play("Theme Sound");
     }
     void Awake()
     {

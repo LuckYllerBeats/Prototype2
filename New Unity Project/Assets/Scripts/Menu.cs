@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
+    void Start()
+    {
+        FindObjectOfType<AudioManager>().Play("BG Sound"); //plau menu sound
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene("Main");

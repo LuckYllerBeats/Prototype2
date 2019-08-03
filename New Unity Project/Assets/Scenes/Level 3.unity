@@ -163,7 +163,9 @@ GameObject:
   - component: {fileID: 264403318}
   - component: {fileID: 264403320}
   - component: {fileID: 264403322}
+  - component: {fileID: 264403319}
   - component: {fileID: 264403321}
+  - component: {fileID: 264403323}
   m_Layer: 0
   m_Name: GuillotineObstacle (2)
   m_TagString: Obstacle
@@ -184,6 +186,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &264403319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264403317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &264403320
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -273,8 +287,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.88331175, y: 0.49651486}
   m_EdgeRadius: 0
+--- !u!331 &264403323
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264403317}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &318469854
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redTouched: 0
   goBack: 0
+  deathFX: {fileID: 1939099538728920, guid: d7c5b5625f307f94fb359c64933c2acb, type: 2}
 --- !u!50 &318469857
 Rigidbody2D:
   serializedVersion: 4
@@ -441,9 +501,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000029802322, y: 0.000000059604645}
+  m_Offset: {x: -0.00000005170711, y: -0.006173809}
   serializedVersion: 2
-  m_Radius: 0.10000002
+  m_Radius: 0.33174956
 --- !u!212 &318469859
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -588,7 +648,9 @@ GameObject:
   - component: {fileID: 591444040}
   - component: {fileID: 591444043}
   - component: {fileID: 591444041}
+  - component: {fileID: 591444042}
   - component: {fileID: 591444044}
+  - component: {fileID: 591444045}
   m_Layer: 0
   m_Name: SpikeBlock (4)
   m_TagString: Obstacle
@@ -632,8 +694,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8687738, y: 0.6889534}
   m_EdgeRadius: 0
+--- !u!114 &591444042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591444039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &591444043
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -700,6 +774,51 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!331 &591444045
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591444039}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0ee5a3ae51fe09444a3fec9f5adeea98, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &675202275
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +829,9 @@ GameObject:
   - component: {fileID: 675202276}
   - component: {fileID: 675202278}
   - component: {fileID: 675202280}
+  - component: {fileID: 675202277}
   - component: {fileID: 675202279}
+  - component: {fileID: 675202281}
   m_Layer: 0
   m_Name: GuillotineObstacle (3)
   m_TagString: Obstacle
@@ -731,6 +852,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &675202277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675202275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &675202278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -820,8 +953,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.8878624, y: 0.49601763}
   m_EdgeRadius: 0
+--- !u!331 &675202281
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675202275}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &702976037
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +1152,9 @@ GameObject:
   - component: {fileID: 803063310}
   - component: {fileID: 803063312}
   - component: {fileID: 803063314}
+  - component: {fileID: 803063311}
   - component: {fileID: 803063313}
+  - component: {fileID: 803063315}
   m_Layer: 0
   m_Name: GuillotineObstacle (5)
   m_TagString: Obstacle
@@ -995,6 +1175,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803063311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803063309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &803063312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1084,8 +1276,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.88279885, y: 0.48196518}
   m_EdgeRadius: 0
+--- !u!331 &803063315
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803063309}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &835328895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,7 +1333,9 @@ GameObject:
   - component: {fileID: 835328896}
   - component: {fileID: 835328899}
   - component: {fileID: 835328897}
+  - component: {fileID: 835328898}
   - component: {fileID: 835328901}
+  - component: {fileID: 835328900}
   m_Layer: 0
   m_Name: SpikeBlock (5)
   m_TagString: Obstacle
@@ -1140,8 +1379,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8750303, y: 0.72790134}
   m_EdgeRadius: 0
+--- !u!114 &835328898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835328895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &835328899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1188,6 +1439,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!331 &835328900
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835328895}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0ee5a3ae51fe09444a3fec9f5adeea98, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!61 &835328901
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1211,7 +1507,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.86141634, y: 0.6742958}
   m_EdgeRadius: 0
 --- !u!1 &858732275
 GameObject:
@@ -1223,7 +1519,9 @@ GameObject:
   - component: {fileID: 858732276}
   - component: {fileID: 858732278}
   - component: {fileID: 858732280}
+  - component: {fileID: 858732277}
   - component: {fileID: 858732279}
+  - component: {fileID: 858732281}
   m_Layer: 0
   m_Name: GuillotineObstacle (6)
   m_TagString: Obstacle
@@ -1244,6 +1542,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &858732277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858732275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &858732278
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1322,7 +1632,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.04597611}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1333,8 +1643,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.8707464, y: 0.46773958}
   m_EdgeRadius: 0
+--- !u!331 &858732281
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858732275}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &875235648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1700,9 @@ GameObject:
   - component: {fileID: 875235649}
   - component: {fileID: 875235651}
   - component: {fileID: 875235653}
+  - component: {fileID: 875235650}
   - component: {fileID: 875235652}
+  - component: {fileID: 875235654}
   m_Layer: 0
   m_Name: GuillotineObstacle
   m_TagString: Obstacle
@@ -1366,6 +1723,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875235650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875235648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &875235651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1444,7 +1813,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.01901009}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1455,8 +1824,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.9163377, y: 0.4296909}
   m_EdgeRadius: 0
+--- !u!331 &875235654
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875235648}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &950539905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,7 +2004,9 @@ GameObject:
   - component: {fileID: 1033086359}
   - component: {fileID: 1033086361}
   - component: {fileID: 1033086363}
+  - component: {fileID: 1033086360}
   - component: {fileID: 1033086362}
+  - component: {fileID: 1033086364}
   m_Layer: 0
   m_Name: GuillotineObstacle (8)
   m_TagString: Obstacle
@@ -1611,6 +2027,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1033086360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033086358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &1033086361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1689,7 +2117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.031369194}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1700,8 +2128,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.9004024, y: 0.5295727}
   m_EdgeRadius: 0
+--- !u!331 &1033086364
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033086358}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1044522380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +2364,48 @@ MonoBehaviour:
   oriPos: 0
   al: 0
   placeHolder: {fileID: 706871624}
+--- !u!1001 &1185860809
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413697885457946, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fdd6adf7400ae9a4881624b2ab83bae6, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1382010404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,7 +2416,9 @@ GameObject:
   - component: {fileID: 1382010405}
   - component: {fileID: 1382010407}
   - component: {fileID: 1382010409}
+  - component: {fileID: 1382010406}
   - component: {fileID: 1382010408}
+  - component: {fileID: 1382010410}
   m_Layer: 0
   m_Name: GuillotineObstacle (7)
   m_TagString: Obstacle
@@ -1922,6 +2439,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1382010406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382010404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &1382010407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2000,7 +2529,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.023121335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2011,8 +2540,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.8880557, y: 0.4728251}
   m_EdgeRadius: 0
+--- !u!331 &1382010410
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382010404}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1581894361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2662,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1654156250
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495798806428912, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4d7e3d34f934c49a104344476d5fa2, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1752072195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,7 +2714,9 @@ GameObject:
   - component: {fileID: 1752072196}
   - component: {fileID: 1752072198}
   - component: {fileID: 1752072200}
+  - component: {fileID: 1752072197}
   - component: {fileID: 1752072199}
+  - component: {fileID: 1752072201}
   m_Layer: 0
   m_Name: GuillotineObstacle (9)
   m_TagString: Obstacle
@@ -2119,6 +2737,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1752072197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1752072195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &1752072198
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2197,7 +2827,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.056379296}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2208,8 +2838,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.8865063, y: 0.46768457}
   m_EdgeRadius: 0
+--- !u!331 &1752072201
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1752072195}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1771215474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +2895,9 @@ GameObject:
   - component: {fileID: 1771215475}
   - component: {fileID: 1771215477}
   - component: {fileID: 1771215479}
+  - component: {fileID: 1771215476}
   - component: {fileID: 1771215478}
+  - component: {fileID: 1771215480}
   m_Layer: 0
   m_Name: GuillotineObstacle (4)
   m_TagString: Obstacle
@@ -2241,6 +2918,18 @@ Transform:
   m_Father: {fileID: 35502032}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771215476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1771215474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2772f64f08a0cff4cab9303b6d56f02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSpat: {fileID: 1043202685492614, guid: 09f26389822a56e44baba2f2a9077f8a, type: 2}
 --- !u!212 &1771215477
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2330,8 +3019,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99609375, y: 1}
+  m_Size: {x: 0.89482296, y: 0.5010173}
   m_EdgeRadius: 0
+--- !u!331 &1771215480
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1771215474}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e65bc0e6d5a5eae4598225f18ba36a3b, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1952894174
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +3335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blueTouched: 0
   goBack: 0
+  deathFX: {fileID: 1939099538728920, guid: d7c5b5625f307f94fb359c64933c2acb, type: 2}
 --- !u!50 &2092190044
 Rigidbody2D:
   serializedVersion: 4
@@ -2633,9 +3368,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000059604645, y: 0.000000059604645}
+  m_Offset: {x: -0.07458579, y: 0.000000047758025}
   serializedVersion: 2
-  m_Radius: 0.10000002
+  m_Radius: 0.28485003
 --- !u!212 &2092190046
 SpriteRenderer:
   m_ObjectHideFlags: 0
