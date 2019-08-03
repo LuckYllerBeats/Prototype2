@@ -9,12 +9,12 @@ public class Blue : MonoBehaviour
     public bool blueTouched;
     public bool goBack;
 
-    //public GameObject bloodSpat;
-   // public GameObject deathFX;
+    public GameObject deathFX;
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
+        StopCoroutine("Delay"); 
     }
 
     // Update is called once per frame
@@ -33,10 +33,24 @@ public class Blue : MonoBehaviour
         {
             blueTouched = true;
             //This for the sound effects 
-            //Play Sound & VFX
-            //FindObjectOfType<AudioManager>().Play("");
-            //Instantiate(bloodSpat, new Vector3(1, -2, 1), Quaternion.identity);
-            //Instantiate(deathFX, transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("Impact Sound");           //play Hurt Sound
+            
+            FindObjectOfType<AudioManager>().Play("Scream Sound");           //play scream sound
+            Instantiate(deathFX, transform.position, Quaternion.identity);  //spill blood particles
+            StartCoroutine("Delay");//delay laughter: Hurt - scream then laugh
+
         }
+        //Are we missing the ability for this player to Check();
+        //Has access to mannge level control (next scene)
+    }
+
+
+    //Sound Delay
+    IEnumerator Delay()
+    {
+        // wait 5sec the play laughter
+        yield return new WaitForSeconds(2f);        //delay 2seconds || 
+        FindObjectOfType<AudioManager>().Play("Lose Sound");           //play laughing sound/lose
+      
     }
 }
