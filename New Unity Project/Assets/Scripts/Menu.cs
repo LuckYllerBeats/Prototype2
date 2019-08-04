@@ -10,6 +10,10 @@ public class Menu : MonoBehaviour {
         FindObjectOfType<AudioManager>().Play("BG Sound"); //plau menu sound
     }
 
+
+    void Update()
+    {
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("Tutorial");
