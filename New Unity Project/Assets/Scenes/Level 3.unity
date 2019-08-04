@@ -1901,8 +1901,8 @@ MonoBehaviour:
   redTouched: 0
   blueTouched: 0
   visible: 1
-  red: {fileID: 2092190040}
-  blue: {fileID: 318469854}
+  red: {fileID: 318469854}
+  blue: {fileID: 2092190040}
   GameLevel: {fileID: 35502031}
   oriPos: 0
   timer: 0
@@ -1935,7 +1935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &999737675
 Transform:
   m_ObjectHideFlags: 0

@@ -981,8 +981,8 @@ MonoBehaviour:
   redTouched: 0
   blueTouched: 0
   visible: 1
-  red: {fileID: 1037869289}
-  blue: {fileID: 1552179915}
+  red: {fileID: 1552179915}
+  blue: {fileID: 1037869289}
   GameLevel: {fileID: 1320594639}
   oriPos: 0
   timer: 0

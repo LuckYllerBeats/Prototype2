@@ -234,6 +234,10 @@ Prefab:
       propertyPath: GameLevel
       value: 
       objectReference: {fileID: 1203211563}
+    - target: {fileID: 1179462827650488, guid: d7b877e49fbf7434ba3c150d029f93c0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7b877e49fbf7434ba3c150d029f93c0, type: 2}
   m_IsPrefabAsset: 0
@@ -576,6 +580,10 @@ Prefab:
       propertyPath: placeHolder
       value: 
       objectReference: {fileID: 30964811}
+    - target: {fileID: 1761662039650192, guid: 45d188d8d1e0bee4e8630f178e634aff, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45d188d8d1e0bee4e8630f178e634aff, type: 2}
   m_IsPrefabAsset: 0
