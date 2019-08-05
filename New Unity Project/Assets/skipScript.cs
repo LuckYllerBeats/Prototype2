@@ -5,20 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class skipScript : MonoBehaviour {
 
-    private bool isClicked = false;
+    public KeyCode left;
 
-    private void OnMouseDown()
-    {
-        isClicked = true;
-    }
-
-    private void OnMouseUp()
-    {
-        isClicked = false;
-    }
     void Update()
     {
-        if (isClicked)
+        if (Input.GetKey(left))
 
         {
 
